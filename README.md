@@ -5,12 +5,12 @@
 
 Module to get US Citizenship and Immigration Services (USCIS) case status from the [USCIS Case Status Online](https://egov.uscis.gov/casestatus/landing.do) web page given a USCIS Receipt Number.
 
-This is simply a screen scrape from the USCIS case status website and is not in any way affiliated with USCIS.  Any changes that they make to the case status web site might and likely could impact this module.  
+This is simply a screen scrape from the USCIS case status website after posting a USCIS Receipt Number.  This module and the support of it is not in any way affiliated with USCIS.  Any changes that they make to the case status web site might and likely could impact this module.  
 
-There is just one exposed function with this module ```getStatus(receiptNumber, callback)```.  The callback is called with an error, if any, and the result.  The result is one object : 
+There is just one exposed function with this module : ```getStatus(receiptNumber, callback)```.  The callback is called with an error, if any, and the result.  The result is one object : 
 ```javascript
   var statusObj = {
-    errHtml: undefined,  // error, if any, on the uscis page from receipt number
+    errHtml: undefined,  // error, if any, on the uscis page after posting receipt number
     statusShortHtml: undefined,  
     statusShortText: undefined, 
     statusLongHtml: undefined, 
