@@ -19,6 +19,8 @@ There is just one exposed function with this module "getStatus(receiptNumber, ca
 
 ```
 
+Each of the 4 properties in the status object returned are 'cleaned' of return lines, new line breaks, tabs and duplicate spaces. 
+
 ## Examples
 
 ```javascript
