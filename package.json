@@ -10,9 +10,14 @@
   "devDependencies": {
     "expect.js": "0.3.x",
     "mocha": "2.x",
+    "coveralls": "2.11.x",
+    "istanbul": "0.4.x",
+    "mocha-lcov-reporter": "^1.0.0",
   },
   "scripts": {
-    "test": "test"
+    "test": "make test",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -22,7 +27,8 @@
     "immigration",
     "module",
     "api",
-    "uscis"
+    "uscis",
+    "citizenship"
   ],
   "author": "Tony Branfort",
   "license": "MIT",
