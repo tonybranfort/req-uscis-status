@@ -1,0 +1,33 @@
+{
+  "name": "req-uscis-status",
+  "version": "1.0.0",
+  "description": "Module to return USCIS case status from https://egov.uscis.gov/casestatus/landing.do",
+  "main": "lib/index.js",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "request": "^2.69.0"
+  },
+  "devDependencies": {
+    "expect.js": "0.3.x",
+    "mocha": "2.x",
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonybranfort/req-uscis-status.git"
+  },
+  "keywords": [
+    "immigration",
+    "module",
+    "api",
+    "uscis"
+  ],
+  "author": "Tony Branfort",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tonybranfort/req-uscis-status/issues"
+  },
+  "homepage": "https://github.com/tonybranfort/req-uscis-status#readme"
+}
