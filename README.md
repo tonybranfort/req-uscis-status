@@ -1,7 +1,7 @@
 # req-uscis-status
-[![Build Status via Travis CI](https://travis-ci.org/tonybranfort/req-uscis.svg?branch=master)](https://travis-ci.org/tonybranfort/apom)
 [![NPM version](http://img.shields.io/npm/v/req-uscis-status.svg)](https://www.npmjs.org/package/apom)
-[![Coverage Status](https://coveralls.io/repos/tonybranfort/req-uscis-status/badge.svg?branch=travis&service=github)](https://coveralls.io/github/tonybranfort/req-uscis-status?branch=master)
+<!-- [![Build Status via Travis CI](https://travis-ci.org/tonybranfort/req-uscis.svg?branch=master)](https://travis-ci.org/tonybranfort/apom) -->
+<!-- [![Coverage Status](https://coveralls.io/repos/tonybranfort/req-uscis-status/badge.svg?branch=travis&service=github)](https://coveralls.io/github/tonybranfort/req-uscis-status?branch=master) -->
 
 Module to get US Citizenship and Immigration Services (USCIS) case status from the [USCIS Case Status Online](https://egov.uscis.gov/casestatus/landing.do) web page given a USCIS Receipt Number.
 
