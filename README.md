@@ -1,13 +1,13 @@
 # req-uscis-status
-[![NPM version](http://img.shields.io/npm/v/req-uscis-status.svg)](https://www.npmjs.org/package/apom)
-<!-- [![Build Status via Travis CI](https://travis-ci.org/tonybranfort/req-uscis.svg?branch=master)](https://travis-ci.org/tonybranfort/apom) -->
-<!-- [![Coverage Status](https://coveralls.io/repos/tonybranfort/req-uscis-status/badge.svg?branch=travis&service=github)](https://coveralls.io/github/tonybranfort/req-uscis-status?branch=master) -->
+[![NPM version](http://img.shields.io/npm/v/req-uscis-status.svg)](https://www.npmjs.org/package/req-uscis-status)
+[![Build Status via Travis CI](https://travis-ci.org/tonybranfort/req-uscis-status.svg?branch=master)](https://travis-ci.org/tonybranfort/req-uscis-status)
+[![Coverage Status](https://coveralls.io/repos/tonybranfort/req-uscis-status/badge.svg?branch=master&service=github)](https://coveralls.io/github/tonybranfort/req-uscis-status?branch=master)
 
 Module to get US Citizenship and Immigration Services (USCIS) case status from the [USCIS Case Status Online](https://egov.uscis.gov/casestatus/landing.do) web page given a USCIS Receipt Number.
 
 This is simply a screen scrape from the USCIS case status website and is not in any way affiliated with USCIS.  Any changes that they make to the case status web site might and likely could impact this module.  
 
-There is just one exposed function with this module "getStatus(receiptNumber, callback)".  The callback is called with an error, if any, and the result.  The result is one object : 
+There is just one exposed function with this module ```getStatus(receiptNumber, callback)```.  The callback is called with an error, if any, and the result.  The result is one object : 
 ```javascript
   var statusObj = {
     errHtml: undefined,  // error, if any, on the uscis page from receipt number
@@ -20,6 +20,8 @@ There is just one exposed function with this module "getStatus(receiptNumber, ca
 ```
 
 Each of the 4 properties in the status object returned are 'cleaned' of return lines, new line breaks, tabs and duplicate spaces. 
+
+Install with ```npm install req-uscis-status```.  
 
 ## Examples
 
