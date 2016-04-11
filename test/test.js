@@ -62,10 +62,10 @@ describe('req-uscis-status',function(){
     rus.getStatus('IOE7117723058', function(err, statusObject) {
       expect(err).to.be(null);
       expect(statusObject.errHtml).to.be(undefined); 
-      expect(statusObject.statusShortHtml).to.contain('Card Was Returned To USCIS By Post Office');
-      expect(statusObject.statusShortText).to.contain('Card Was Returned To USCIS By Post Office');
-      expect(statusObject.statusLongHtml).to.contain('We mailed your card to the address you gave us, but the Post Office could not deliver it');
-      expect(statusObject.statusLongText).to.contain('We mailed your card to the address you gave us, but the Post Office could not deliver it');
+      expect(statusObject.statusShortHtml).to.contain('Card Was Delivered To Me By The Post Office');
+      expect(statusObject.statusShortText).to.contain('Card Was Delivered To Me By The Post Office');
+      expect(statusObject.statusLongHtml).to.contain('the Post Office delivered your new card for Receipt Number');
+      expect(statusObject.statusLongText).to.contain('the Post Office delivered your new card for Receipt Number');
       done();  
     }); 
   }); 
