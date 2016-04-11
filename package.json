@@ -1,6 +1,6 @@
 {
   "name": "req-uscis-status",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Module to return USCIS case status from https://egov.uscis.gov/casestatus/landing.do",
   "main": "lib/index.js",
   "dependencies": {
